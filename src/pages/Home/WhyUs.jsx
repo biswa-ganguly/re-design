@@ -2,7 +2,7 @@ import React from 'react'
 
 function WhyUs() {
   return (
-    <div>akshat</div>
+    <div></div>
   )
 }
 
