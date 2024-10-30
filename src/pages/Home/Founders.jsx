@@ -2,7 +2,7 @@ import React from 'react'
 
 function Founders() {
   return (
-    <div>Founders</div>
+    <div></div>
   )
 }
 
