@@ -6,12 +6,16 @@ import WhyUs from './WhyUs'
 import Founders from './Founders'
 import Faq from './Faq'
 import Navbar from '../../components/Navbar'
+import Separator from '../../components/Separator'
 
 function HomePage() {
   return (
     <div>
         <Navbar/>
         <Hero/>
+        <div>
+            <Separator/>
+        </div>
         <AboutUs/>
         <Create/>
         <WhyUs/>
