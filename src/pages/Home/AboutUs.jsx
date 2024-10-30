@@ -1,7 +1,7 @@
 import React from 'react';
 import FlipCard from '../../components/FlipCard';
 import Circle from '../../components/Circle';
-import Triangle from '../../components/Triangle';
+import RotateTriangle from '../../components/RotateTriangle';
 
 function AboutUs() {
   return (
@@ -22,7 +22,7 @@ function AboutUs() {
         <Circle />
         </div>
         <div className='lg:ml-[20%] px-[%]'>
-        <Triangle />
+        <RotateTriangle />
         </div>
       </div>
     </section>
