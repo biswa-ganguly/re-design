@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import ToggleButton from '../../components/ToggleButton';
 import {motion} from "framer-motion";
 import ImageSlider from "../../components/ImageSlider"
+import BookAMeeting from '../../components/BookAMeeting';
 
 
 function Hero() {
@@ -71,8 +72,8 @@ function Hero() {
 
        <div className="flex flex-col gap-10">
       <div className = "inline-flex w-2/4 font-inter text-[26px] ml-20 font-bold">We are The Agenc-E, a digital marketing agency based in Kolkata. Agenc-E fits the misfits, dreamers and those who are willing to think differently.</div>
-      <button className="h-[120px] w-[350px] bg-[#6735EA] rounded-full ml-20"></button>
-
+      {/* <button className="h-[120px] w-[350px] bg-[#6735EA] rounded-full ml-20"></button> */}
+      <BookAMeeting/>
   
       </div>
     </section>
