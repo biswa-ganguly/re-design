@@ -2,7 +2,7 @@ import React from 'react'
 
 function Create() {
   return (
-    <div></div>
+    <div className = "bg-black min-h-screen text-white">Creative & fresh</div>
   )
 }
 
