@@ -42,13 +42,13 @@ function ToggleButton() {
       animate = {{
         x: xValue,
         // x: isOn ? 116 : 5,
-        scaleX: isOn ? [1, 1.98, 1] : [1, 1.95, 1], 
+        scaleX: isOn ? [1, 2.10, 1] : [1, 2.05, 1], 
           backgroundColor: isOn ? '#FECE02' : '#000000',
        }}
        transition={{
-        x: { type: 'spring',stiffness: 800, damping: 90 },
-        scaleX: { duration: 0.3, ease: 'easeInOut' }, 
-        backgroundColor: { duration: 0.5 },
+        x: { type: 'spring',stiffness: 900, damping: 140 },
+        scaleX: { duration: 0.5, ease: 'easeInOut' }, 
+        backgroundColor: { duration: 0.3 },
        }}
        style={{
         originX: isOn ? 1.15 : 0

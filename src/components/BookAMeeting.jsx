@@ -65,7 +65,7 @@ function BookAMeeting() {
     tansition= {{
         duration: 0.8, // Slower transition for the text animation
           ease: 'easeInOut',
-    }}
+        }}
     animate={controls}
     
     >
