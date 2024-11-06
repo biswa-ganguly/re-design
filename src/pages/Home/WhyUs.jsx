@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
 import {motion,useInView, useAnimation} from "framer-motion";
 import CardForWhyUS from '../../components/CardForWhyUS';
-
+// import Card from "../../components/Cards"
+// import Page from "../../Page.js"
 
 
 
@@ -30,9 +31,12 @@ function WhyUs() {
         <div className= "flex font-inter font-normal text-[20px] text-white pb-36">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
 
-        <div className = "flex flex-col w-full justify-around items-center gap-32 h-[256rem]">
+        <div className = "flex flex-col w-full justify-around items-center gap-32 h-[256rem] " 
+      >
 
-       <CardForWhyUS className =""/>
+       <CardForWhyUS/>
+
+       {/* <Page/> */}
 
           
           
