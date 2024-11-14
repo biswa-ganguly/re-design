@@ -10,14 +10,14 @@ function BookAMeeting() {
     whileHover ="hover"
     initial = "rest"
     animate = "rest"
-    className = "h-[120px] w-[325px] bg-[#6735EA] rounded-full ml-20 relative overflow-hidden"
+    className = "lg:h-[120px] lg:w-[325px] h-[90px] w-[275px]  bg-[#6735EA] rounded-full lg:ml-20 ml-5  relative overflow-hidden"
     onHoverStart={() => controls.start("hover")}
     onHoverEnd={() => controls.start("rest")} 
 
     >
 
       <motion.div
-              className="absolute inset-0 rounded-lg font-archivo font-medium text-[#6735EA]"
+              className="absolute inset-0 rounded-lg font-archivo font-medium"
               variants={{
                 rest: { scale: 0, y: '100%',scaleX:0.5,scaleY:3 }, 
                 hover: { scale: 2, y: '10%',scaleX:1,scaleY:1 }, 
@@ -34,7 +34,7 @@ function BookAMeeting() {
               
               > 
                     <motion.span
-        className="absolute inset-0 flex justify-center items-center text-[#6735EA] font-archivo font-medium"
+        className="absolute inset-0 flex justify-center items-center text-[#6735EA] lg:text-[16px] text-[12px] font-archivo font-medium"
         initial={{ opacity: 0, y: 10 }}
         animate="rest"
         whileHover="hover"
@@ -54,7 +54,7 @@ function BookAMeeting() {
 
     </motion.button>
     <motion.div 
-    className ="flex gap-3 justify-center items-center text-[35px] text-[#6735EA] font-archivo font-medium -z-40"
+    className ="flex gap-3 justify-center items-center lg:text-[35px] text-[20px] text-[#6735EA] font-archivo font-medium -z-40 whitespace-nowrap"
     whileHover= "hover"
     // animate = "rest"
     initial = {{opacity:1}}

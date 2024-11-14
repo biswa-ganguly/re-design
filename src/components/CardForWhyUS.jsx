@@ -18,7 +18,6 @@ function CardForWhyUS() {
       description: "Our motto is striving for that client-employee synergy that allows us to balance employee happiness with the clients' needs for quality results.",
       imageSrc: '/Whyus.svg',
       backgroundColor: "#A785FF",
-
     },{
       title:"Best",
       description: "Our motto is striving for that client-employee synergy that allows us to balance employee happiness with the clients' needs for quality results.",
