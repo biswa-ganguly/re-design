@@ -1,3 +1,5 @@
+import Separator from "../../components/Separator";
+
 function Create() {
   const sections = [
     {
@@ -31,14 +33,14 @@ function Create() {
   const text2 = "Fresh";
 
   return (
-    <div className="container relative px-5 bg-black min-h-screen text-white pt-28 lg:pt-36">
+    <div className="rounded-t-[35%]  relative px-5 bg-black min-h-screen text-white pt-28 lg:pt-36">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-45 pointer-events-none"
+        className="absolute inset-0 bg-cover bg-center rounded-t-[45%] opacity-45 pointer-events-none"
         style={{
           backgroundImage: `url("/texture.webp")`,
         }}
       ></div>
-      <div className="text-center flex flex-col gap-5">
+      <div className="text-center flex flex-col gap-7">
         <div className="uppercase font-archivo flex gap-7 justify-center">
           <div className="flex text-4xl lg:text-7xl font-medium">
             {text1.split("").map((char, index) => (
@@ -52,7 +54,7 @@ function Create() {
           </div>
 
           <span className="text-4xl lg:text-7xl font-medium transition-transform transform hover:-translate-y-3 inline-block will-change-transform">
-            &#x1F672;
+            &
           </span>
 
           <div className="flex text-4xl lg:text-7xl font-medium">
@@ -76,7 +78,7 @@ function Create() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="flex flex-col p-10 gap-3 text-gray-400 hover:text-white transition-colors duration-200"
+            className="flex flex-col p-10 gap-5 text-gray-400 hover:text-white transition-colors duration-200"
           >
             <p className="text-2xl font-semibold">0{index + 1}</p>
             <h1 className="uppercase font-semibold text-xl">{section.title}</h1>
@@ -84,6 +86,9 @@ function Create() {
           </div>
         ))}
       </div>
+      <div className='mt-10 flex justify-center'>
+    <div className='border-[#b7b7b7] border-2 w-full'></div>
+    </div>
     </div>
   );
 }
