@@ -11,7 +11,7 @@ function BookAMeeting() {
     whileTap = "hover"
     initial = "rest"
     animate = "rest"
-    className = "lg:h-[120px] lg:w-[325px] h-[90px] w-[275px]  bg-[#6735EA] rounded-full lg:ml-20 ml-5  relative overflow-hidden"
+    className = "lg:h-[120px] lg:w-[325px] h-[90px] w-[245px]  bg-[#6735EA] rounded-full lg:ml-20 ml-5  relative overflow-hidden"
     onHoverStart={() => controls.start("hover")}
     onHoverEnd={() => controls.start("rest")} 
 
@@ -39,6 +39,7 @@ function BookAMeeting() {
         initial={{ opacity: 0, y: 10 }}
         animate="rest"
         whileHover="hover"
+         whileTap = "hover"
         variants={{
           rest: { opacity: 0, y: 10 }, 
           hover: { opacity: 1, y: -20 }, 
@@ -55,23 +56,44 @@ function BookAMeeting() {
 
     </motion.button>
     <motion.div 
-    className ="flex gap-3 justify-center items-center lg:text-[35px] text-[20px] text-[#6735EA] font-archivo font-medium -z-40 whitespace-nowrap"
+    className =" lg:flex hidden  gap-3 justify-center items-center lg:text-[35px] text-[20px] text-[#6735EA] font-archivo font-medium -z-40 whitespace-nowrap"
     whileHover= "hover"
     // animate = "rest"
+     whileTap = "hover"
     initial = {{opacity:1}}
     variants ={{
         rest: {opacity:1,x:0},
-        hover:{opacity:1,x: -350}
+        hover:{opacity:1,x: -350,stiffness:200,damping:100}
     }}
     tansition= {{
         duration: 0.8, // Slower transition for the text animation
-          ease: 'easeInOut',
+          ease: 'easeIn',
         }}
     animate={controls}
     
     >
-        <img src="/Arrow 1.svg" alt="arrow" className ="h-10 w-10" />
+        <img src="/Arrow 1.svg" alt="arrow" className ="lg:block hidden h-10 w-10" />
       Book A meeting
+    </motion.div>
+    <motion.div 
+    className =" lg:hidden flex p-4 text-center leading-5 justify-center items-center lg:text-[35px] text-[20px] text-[#6735EA] font-archivo font-medium -z-40 whitespace-nowrap"
+    whileHover= "hover"
+    // animate = "rest"
+     whileTap = "hover"
+    initial = {{opacity:1}}
+    variants ={{
+        rest: {opacity:1,x:0},
+        hover:{opacity:1,x: -250,stiffness:200,damping:100}
+    }}
+    tansition= {{
+        duration: 0.8, // Slower transition for the text animation
+          ease: 'easeIn',
+        }}
+    animate={controls}
+    
+    >
+        <img src="/Arrow 1.svg" alt="arrow" className ="lg:hidden block h-10 w-10" />
+      Book <br /> A <br />meeting
     </motion.div>
     </div>
     
