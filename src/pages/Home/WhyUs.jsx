@@ -25,7 +25,7 @@ function WhyUs() {
     <div  
        style={{
         postion:'sticky',
-        top:'50px'
+        top:'350px'
        }}    
        className= " lg:hidden flex flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4">
       <div className ="flex justify-start items-center font-archivo text-[#FECE02] text-[80px] font-medium whitespace-nowrap">WHY US?</div>
