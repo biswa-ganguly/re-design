@@ -44,14 +44,14 @@ function Hero() {
             <ToggleButton/>
             <div className = " flex-col mb-16 space-y-0 -mt-10 hidden lg:flex">
           <div className = "font-architects text-2xl font-light whitespace-nowrap">Just a button</div>
-          <img src = "/Arrow.svg" alt ="Arrow" className ="mb-5 lg:w-24 lg:h-24 md:w-16 md:h-16 "/>
+          <img src = "/Arrow.svg" alt ="Arrow" className ="mb-5 lg:w-24 lg:h-24 md:w-16 md:h-16"/>
 
           </div>
 
         </div>
 
 
-        <div className=" flex  lg:h-[200px] lg:w-[56rem] md:h-[100px] md:w-[45rem] h-[50px] w-[22rem] justify-evenly items-center lg:-mt-20 md:-mt-5">
+        <div className=" flex lg:h-[200px] lg:w-[56rem] md:h-[100px] md:w-[45rem] h-[50px] w-[22rem] items-center lg:-mt-20 md:-mt-5 lg:mr-0 mr-7">
     
         <motion.img src= "/Frame.svg" alt ="star" className= "lg:h-32 md:h-20 h-14" animate={{ rotate: [0, 90, 180, 270, 360] }} 
         transition={{
@@ -60,20 +60,21 @@ function Hero() {
         repeat: Infinity, 
       
       }} />
-<p className="lg:text-[120px] md:text-[80px] text-[50px] font-archivo gap-0 font-medium">
+<p className="lg:text-[120px] md:text-[80px] text-[50px] font-archivo font-medium whitespace-nowrap">
     STAND OUT</p>
-
-</div>
-<div className = "flex flex-col items-end justify-end md:block lg:hidden font-architects text-l mb-16 font-light whitespace-nowrap right-1 w-full -mt-10">
-          <img src = "/Arrow.svg" alt ="Arrow" className =" md:block lg:hidden right-16 mb-5 md:w-12 md:h-12 -rotate-[30deg]"/>Just a button
+    <div className = "flex flex-col mt-8 items-end justify-end md:block lg:hidden font-architects font-light whitespace-nowrap w-11 lg:-mt-10 gap-0">
+          <img src = "/Arrow.svg" alt ="Arrow" className =" flex md:block lg:hidden mb-2 md:w-12 md:h-12 -rotate-[40deg]"/>Just a button
           </div>
+
+         </div>
+
 
       </div>
 
 
 
        <div className="flex flex-col gap-10 w-full justify-start items-start">
-      <div className = "flex lg:w-2/4 w-3/4 font-inter lg:text-[26px] text-[20px] lg:ml-20 ml-5 font-bold ">We are The Agenc-E, a digital marketing agency based in Kolkata. Agenc-E fits the misfits, dreamers and those who are willing to think differently.</div>
+      <div className = "flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-bold ">We are The Agenc-E, a digital marketing agency based in Kolkata. Agenc-E fits the misfits, dreamers and those who are willing to think differently.</div>
       <BookAMeeting/>
   
       </div>

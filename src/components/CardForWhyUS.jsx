@@ -72,15 +72,15 @@ function CardForWhyUS() {
           key={i}
           ref={(el) => (cardsRef.current[i] = el)}
           style={{ position: 'sticky', top: '190px',backgroundColor: card.backgroundColor }}
-          className="flex flex-col  lg:h-[360px] lg:w-[680px] md:w-[600px] md:h-[300px] h-[250px] w-[370px] rounded-3xl mb-10"
+          className=" flex flex-col  lg:h-[360px] lg:w-[680px] md:w-[600px] md:h-[300px] h-[220px] w-[370px] lg:rounded-3xl md:rounded-3xl rounded-xl mb-10"
         >
-          <div className="flex font-archivo text-white font-medium text-[40px] p-5 pl-10 pt-12">
+          <div className="flex font-archivo text-white font-medium text-[40px] p-5 pl-10 lg:pt-12 md:pt-12 pt-2">
             {card.title}
           </div>
           <div className="flex font-inter text-white font-normal text-[18px] pl-10">
             {card.description}
           </div>
-          <img src={card.imageSrc} alt="whyus" className="absolute lg:mt-44 mt-40 overflow-hidden" />
+          <img src={card.imageSrc} alt="whyus" className="absolute lg:mt-44 md:mt-36 mt-32 overflow-hidden" />
         </div>
      )) }
     </div>
