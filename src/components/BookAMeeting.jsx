@@ -8,6 +8,7 @@ function BookAMeeting() {
     <div className ="flex flex-row gap-8">
     <motion.button
     whileHover ="hover"
+    whileTap = "hover"
     initial = "rest"
     animate = "rest"
     className = "lg:h-[120px] lg:w-[325px] h-[90px] w-[275px]  bg-[#6735EA] rounded-full lg:ml-20 ml-5  relative overflow-hidden"
