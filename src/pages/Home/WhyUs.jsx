@@ -6,7 +6,7 @@ import CardForWhyUS from '../../components/CardForWhyUS';
 
 function WhyUs() {
 
-
+  
   return (
     <>    
     <div className = "h-64 bg-black">
