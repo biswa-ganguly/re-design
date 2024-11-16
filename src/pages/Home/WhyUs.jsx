@@ -34,7 +34,7 @@ function WhyUs() {
         <div className= "flex font-inter font-normal text-[20px] text-white pb-36 lg:text-start text-center">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         </div>
 
-        <div className = "flex flex-col w-full justify-around items-center gap-32 lg:h-[256rem] md:h-[130rem] h-[120rem]  " 
+        <div className = "flex flex-col w-full justify-around items-center gap-32 lg:h-[140rem] md:h-[130rem] h-[120rem]  " 
       >
 
        <CardForWhyUS/>
