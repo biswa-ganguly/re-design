@@ -7,6 +7,7 @@ import Founders from './Founders'
 import Faq from './Faq'
 import Navbar from '../../components/Navbar'
 import Separator from '../../components/Separator'
+import AmazingWorks from './AmazingWorks'
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
         <Create/>
         <WhyUs/>
         <Founders/>
+        <AmazingWorks/>
         <Faq/>
     </div>
   )
