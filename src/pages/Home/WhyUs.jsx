@@ -1,31 +1,19 @@
 import React, {useRef} from 'react';
 import {motion,useInView, useAnimation} from "framer-motion";
 import CardForWhyUS from '../../components/CardForWhyUS';
-// import Card from "../../components/Cards"
-// import Page from "../../Page.js"
 
 
 
 function WhyUs() {
 
-  // cardVariants = {
-  //   hidden: {opacity: 0, y:50}
-  //   visible:{opacity:1, y:0}
-  // }
-
-  // const isInView = useInView(containerRef, { once: true, amount: 0.3 });
-
-  // if (isInView) {
-  //   controls.start("visible");
-  // }
-
+  
   return (
     <>    
     <div className = "h-64 bg-black">
     <div  
        style={{
         postion:'sticky',
-        top:'50px'
+        top:'350px'
        }}    
        className= " lg:hidden flex flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4">
       <div className ="flex justify-start items-center font-archivo text-[#FECE02] text-[80px] font-medium whitespace-nowrap">WHY US?</div>
@@ -50,9 +38,6 @@ function WhyUs() {
       >
 
        <CardForWhyUS/>
-
-       {/* <Page/> */}
-
           
           
         </div>
