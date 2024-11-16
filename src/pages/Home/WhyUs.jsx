@@ -1,23 +1,11 @@
 import React, {useRef} from 'react';
 import {motion,useInView, useAnimation} from "framer-motion";
 import CardForWhyUS from '../../components/CardForWhyUS';
-// import Card from "../../components/Cards"
-// import Page from "../../Page.js"
 
 
 
 function WhyUs() {
 
-  // cardVariants = {
-  //   hidden: {opacity: 0, y:50}
-  //   visible:{opacity:1, y:0}
-  // }
-
-  // const isInView = useInView(containerRef, { once: true, amount: 0.3 });
-
-  // if (isInView) {
-  //   controls.start("visible");
-  // }
 
   return (
     <>    
@@ -50,9 +38,6 @@ function WhyUs() {
       >
 
        <CardForWhyUS/>
-
-       {/* <Page/> */}
-
           
           
         </div>
