@@ -1,13 +1,14 @@
-import React from 'react';
-import Navbar from '../../components/Navbar';
-import Separator from '../../components/Separator';
-import Hero from './Hero';
-import AboutUs from './AboutUs';
-import Create from './Create';
-import WhyUs from './WhyUs';
-import Founders from './Founders';
-import AmazingWorks from './AmazingWorks';
-import Faq from './Faq';
+import React from "react";
+import Navbar from "../../components/Navbar";
+import Separator from "../../components/Separator";
+import Hero from "./Hero";
+import AboutUs from "./AboutUs";
+import Create from "./Create";
+import WhyUs from "./WhyUs";
+import Founders from "./Founders";
+import AmazingWorks from "./AmazingWorks";
+import Faq from "./Faq";
+import Footer from "./Footer";
 
 function HomePage() {
   return (
@@ -41,6 +42,9 @@ function HomePage() {
       </section>
       <section id="contact">
         <Faq />
+      </section>
+      <section id="">
+        <Footer />
       </section>
     </div>
   );
