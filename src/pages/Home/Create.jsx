@@ -35,7 +35,7 @@ function Create() {
   return (
     <div className="relative px-5 bg-black min-h-screen text-white pt-28 lg:pt-36">
       <div
-        className="absolute inset-0 bg-cover bg-center rounded-t-[45%] opacity-45 pointer-events-none"
+        className="absolute inset-0 bg-cover bg-center opacity-45 pointer-events-none"
         style={{
           backgroundImage: `url("/texture.webp")`,
         }}
@@ -46,14 +46,14 @@ function Create() {
             {text1.split("").map((char, index) => (
               <span
                 key={`part1-${index}`}
-                className="inline-block transition-transform transform hover:-translate-y-3 will-change-transform"
+                className="inline-block transition-transform transform hover:-translate-y-5 will-change-transform"
               >
                 {char}
               </span>
             ))}
           </div>
 
-          <span className="text-4xl lg:text-7xl font-medium transition-transform transform hover:-translate-y-3 inline-block will-change-transform">
+          <span className="text-4xl lg:text-7xl font-medium transition-transform transform hover:-translate-y-5 inline-block will-change-transform">
             &
           </span>
 
@@ -61,7 +61,7 @@ function Create() {
             {text2.split("").map((char, index) => (
               <span
                 key={`part2-${index}`}
-                className="inline-block transition-transform transform hover:-translate-y-3 will-change-transform"
+                className="inline-block transition-transform transform hover:-translate-y-5 will-change-transform"
               >
                 {char}
               </span>

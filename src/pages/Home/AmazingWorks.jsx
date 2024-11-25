@@ -74,7 +74,7 @@ const AmazingWorks = () => {
       <h1 className="text-[#6735EA] text-center font-archivo text-5xl lg:text-7xl font-medium">
         Our Amazing Works
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         {works.map((work, index) => (
           <div key={index} className="px-2">
             <AmazingCard

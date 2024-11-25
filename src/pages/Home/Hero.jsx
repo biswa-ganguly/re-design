@@ -10,7 +10,7 @@ function Hero() {
     <section>
       <img src= "/Highlight.png" alt = "Heroimage" className = "absolute top-0 right-0 w-full -z-50" />
 
-      <div className="flex flex-col font-semibold justify-start items-center lg:min-h-screen h-96 w-ful relative lg:-mt-6 md:mt-12  mt-24">
+      <div className="flex flex-col font-semibold justify-start items-center lg:min-h-screen h-[30vh] w-ful relative lg:-mt-6 md:mt-12  mt-24">
         
         <div className=" flex lg:h-[200px] lg:w-[56rem] md:h-[100px] md:w-[41rem] h-[50px] w-[23rem]  justify-evenly items-center">
         <div className =" lg:w-[280px] lg:h-[100px] md:w-[180px] md:h-[60px] w-[110px] h-[40px] rounded-full inline-block overflow-hidden">
@@ -70,9 +70,6 @@ function Hero() {
 
 
       </div>
-
-
-
        <div className="flex flex-col gap-10 w-full justify-start items-start">
       <div className = "flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-bold ">We are The Agenc-E, a digital marketing agency based in Kolkata. Agenc-E fits the misfits, dreamers and those who are willing to think differently.</div>
       <BookAMeeting/>
