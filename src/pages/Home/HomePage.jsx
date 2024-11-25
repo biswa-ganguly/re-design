@@ -40,10 +40,10 @@ function HomePage() {
       <section id="">
         <AmazingWorks />
       </section>
-      <section id="contact">
+      <section id="">
         <Faq />
       </section>
-      <section id="">
+      <section id="contact">
         <Footer />
       </section>
     </div>
