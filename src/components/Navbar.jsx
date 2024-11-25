@@ -1,71 +1,75 @@
 import React, { useState } from 'react';
-import logo from "/assets/logo.svg";
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import hamburger and close icons
-import {Link} from "react-router-dom";
+import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '/assets/logo.svg';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
+  const [isOpen, setIsOpen] = useState(false);
+
+ 
   const navigation = [
-    { name: 'ABOUT', href: '/AboutUspage' },
-    { name: 'SERVICES', href: '#' },
-    { name: 'WORK', href: '#' },
-    { name: 'BLOGS', href: '#' },
-    { name: 'CONTACT', href: '#' },
+    { name: 'ABOUT', to: 'about' },
+    { name: 'SERVICES', to: 'services' },
+    { name: 'WORK', to: 'work' },
+    // { name: 'BLOGS', to: 'blogs' },
+    { name: 'CONTACT', to: 'contact' },
   ];
 
-  const toggleMenu = () => setIsOpen(!isOpen); // Function to toggle the menu
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="py-6 px-8 shadow-sm">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <Link href="#" className="flex-shrink-0">
-            <img src={logo} alt="Logo" className="w-10 h-10" />
-          </Link>
-        </div>
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+        <a href="#" className="flex-shrink-0">
+          <img src={logo} alt="Logo" className="w-12 h-12" />
+        </a>
 
-        <div className="hidden md:flex items-center space-x-12">
+        
+        <div className="hidden md:flex space-x-10">
           {navigation.map((item) => (
             <Link
               key={item.name}
-              href={item.href}
-              className="text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider"
+              to={item.to}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider cursor-pointer"
             >
               {item.name}
             </Link>
           ))}
         </div>
 
-        {/* Hamburger Icon */}
+   
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
-            <FaBars className="text-gray-800 w-6 h-6" />
+            {isOpen ? (
+              <FaTimes className="text-gray-800 w-6 h-6" />
+            ) : (
+              <FaBars className="text-gray-800 w-6 h-6" />
+            )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+     
       {isOpen && (
-        <div className="md:hidden">
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-lg">
-            {/* <div className="flex justify-between items-center px-4 py-2">
-              <h2 className="text-lg font-semibold">Menu</h2>
-              <button onClick={toggleMenu} className="focus:outline-none">
-                <FaTimes className="text-gray-800 w-6 h-6" />
-              </button>
-            </div> */}
-            <div className="flex flex-col items-center">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider py-2"
-                  onClick={() => setIsOpen(false)} // Close menu on link click
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
+        <div className="md:hidden bg-white shadow-lg">
+          <div className="flex flex-col items-center space-y-4 py-6">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                onClick={() => setIsOpen(false)} 
+                className="block text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider"
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         </div>
       )}
