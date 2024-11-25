@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import logo from "/assets/logo.svg";
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import hamburger and close icons
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
   const navigation = [
-    { name: 'ABOUT', href: '#' },
+    { name: 'ABOUT', href: '/AboutUspage' },
     { name: 'SERVICES', href: '#' },
     { name: 'WORK', href: '#' },
     { name: 'BLOGS', href: '#' },
@@ -18,20 +19,20 @@ const Navbar = () => {
     <nav className="py-6 px-8 shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <a href="#" className="flex-shrink-0">
+          <Link href="#" className="flex-shrink-0">
             <img src={logo} alt="Logo" className="w-10 h-10" />
-          </a>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center space-x-12">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className="text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 

@@ -6,6 +6,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+import AboutUspage from './pages/AboutUs/AboutUspage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Wrapper>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/AboutUspage" element={<AboutUspage />} />
         </Routes>
       </Wrapper>
     </BrowserRouter>
