@@ -15,7 +15,7 @@ function BookAMeetingV2() {
     onHoverStart={() => controls.start("hover")}
     onHoverEnd={() => controls.start("rest")} 
     > <motion.div 
-    className ="text-[35px] font-archivo font-medium text-[#FECE02] h-56 flex items-center justify-center w-full pb-24"
+    className ="text-[35px] font-archivo font-medium text-[#FECE02] h-56 flex items-center justify-center w-full pb-24 leading-none"
     whileHover = "hover"
     initial = "rest"
     animate = "rest"
