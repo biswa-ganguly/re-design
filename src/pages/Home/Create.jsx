@@ -35,7 +35,7 @@ function Create() {
   return (
     <div className="relative px-5 bg-black min-h-screen text-white pt-28 lg:pt-36">
       <div
-        className="absolute inset-0 bg-cover bg-center rounded-t-[45%] opacity-45 pointer-events-none"
+        className="absolute inset-0 bg-cover bg-center opacity-45 pointer-events-none"
         style={{
           backgroundImage: `url("/texture.webp")`,
         }}
