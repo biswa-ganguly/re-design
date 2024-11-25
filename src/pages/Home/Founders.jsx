@@ -1,13 +1,9 @@
 import react,{useState} from "react";
 import {motion} from "framer-motion"
-import { useState } from "react";
 
 function Founders() {
 
   const [hoveredFounder,setHoveredFounder] =useState(null)
-
-
-  const [currentFounder, setCurrentFounder] = useState(null);
 
   return (
    
@@ -94,79 +90,9 @@ function Founders() {
 
     
 
-    <div className="flex flex-col lg:flex-row items-center justify-around my-20 px-10 relative gap-10">
-
-      <div
-        onMouseEnter={() => setCurrentFounder(founders[0])}
-        onMouseLeave={() => setCurrentFounder(null)}
-        className="flex flex-col items-center text-center"
-      >
-        <img
-          src={founders[0].image}
-          alt={founders[0].name}
-          className="hover:scale-95 transition-transform duration-300"
-        />
-        <h1 className="text-xl font-semibold mt-4">{founders[0].name}</h1>
-        <p className="font-light">{founders[0].designation}</p>
-      </div>
-
-   
-      <div className="relative flex flex-col items-center justify-center">
-        <div className="relative">
-          <div className="bg-[#6735EA] w-[450px] h-[450px] rounded-full flex flex-col items-center justify-center gap-6 text-center text-white z-10 absolute opacity-80 overflow-hidden">
-            <div className="relative h-full w-full">
-              <div
-                className={`absolute top-[30%] inset-0 transition-transform duration-500 ${
-                  currentFounder ? "-translate-y-full" : "translate-y-0"
-                }`}
-              >
-                <h1 className="text-5xl font-medium font-archivo">
-                  Meet our <br />
-                  Founders
-                </h1>
-                <p className="font-inter font-light px-8">
-                  From humble beginnings to global impact, our founders' vision
-                  and determination have shaped the trajectory of our company.
-                </p>
-              </div>
-              <div
-                className={`absolute top-[25%] inset-0 transition-transform duration-500 ${
-                  currentFounder ? "translate-y-0" : "translate-y-full"
-                }`}
-              >
-                {currentFounder && (
-                  <>
-                    <p className="font-inter font-light px-8">
-                      {currentFounder.description}
-                    </p>
-                  </>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="bg-[#A785FF] w-[450px] h-[450px] rounded-full z-0 -translate-x-4 -translate-y-4"></div>
-        </div>
-      </div>
-
-     
-      <div
-        onMouseEnter={() => setCurrentFounder(founders[1])}
-        onMouseLeave={() => setCurrentFounder(null)}
-        className="flex flex-col items-center text-center"
-      >
-        <img
-          src={founders[1].image}
-          alt={founders[1].name}
-          className="hover:scale-95 transition-transform duration-300"
-        />
-        <h1 className="text-xl font-semibold mt-4">{founders[1].name}</h1>
-        <p className="font-light">{founders[1].designation}</p>
-      </div>
     </div>
-    
   
   );
 }
-
 
 export default Founders;
