@@ -11,16 +11,16 @@ function Accordion() {
 
     const faqItems = [
         {
-          question:"How does onboarding work and what's the communication like during projects?",
-          answere: "During onboarding, we will guide you through the entire process and ensure smooth communication through regular updates and meetings.",
+          question:"How Does Onboarding Work, and What’s Communication Like During Projects?  ",
+          answere: "We keep it refreshingly straightforward. From day one, you’ll connect with the dedicated team that’s got your back. Expect regular updates, check-ins, and prompt responses to ensure you’re always in the loop and never left guessing.",
         },
          {
-            question:"What is the Pricing Structure for the services?",
-            answere: "During onboarding, we will guide you through the entire process and ensure smooth communication through regular updates and meetings.",
+            question:"What Is the Pricing Structure for Your Services? ",
+            answere: "Our pricing is as personalized as our strategies. Whether it’s social media marketing, website redesign, or an all-in-one package, we craft solutions that deliver value aligned with your unique goals.",
           },
           {
-            question:"How can i contact the Agenc-E?",
-            answere: "During onboarding, we will guide you through the entire process and ensure smooth communication through regular updates and meetings.",
+            question:"How Can I Reach The Agenc-E?  ",
+            answere: "Getting in touch is easy! Whether through our website, email, or a quick phone call, we’re just a conversation away from transforming your ideas into something extraordinary.",
           }
       ]
   return (
