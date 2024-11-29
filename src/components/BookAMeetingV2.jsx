@@ -38,7 +38,7 @@ function BookAMeetingV2() {
                 hover: { scale: 2, y: '10%',scaleX:1,scaleY:1 }, 
               }}
               transition={{
-                duration: 0.4,
+                duration: 0.3,
                 ease: [1.25, 1, 1, 1],
               }}
             style={{
@@ -58,10 +58,6 @@ function BookAMeetingV2() {
           rest: { opacity: 0, y: 10 }, 
           hover: { opacity: 1, y: -20 }, 
         }}
-        transition={{
-          ease: 'easeInOut',
-          x: { stiffness:800, damping: 100}
-        }}
       >
         <img src="Arrow 1.svg" alt="arrow" className="rotate-90 h-4" />
       </motion.span>
@@ -80,10 +76,7 @@ function BookAMeetingV2() {
         rest: {opacity:1,x:0},
         hover:{opacity:1,x: -250,stiffness:200,damping:100}
     }}
-    tansition= {{
-        duration: 0.8, 
-          ease: 'easeIn',
-        }}
+
     animate={controls}
     
     >

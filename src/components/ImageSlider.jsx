@@ -4,10 +4,10 @@ import react,{useState,useEffect} from "react";
 function ImageSlider() {
 
     const images = [
-      "/Slider1.webp",
-      "/Slider2.webp",
-      "/Slider3.webp",
-      "/Slider4.webp"
+      "heroSec/Component1.png",
+      "heroSec/Component2.png",  
+      "heroSec/Component3.png",
+      "heroSec/Component4.png"
     ]
   
   
@@ -24,12 +24,12 @@ function ImageSlider() {
   
     return (
   
-      <div className=" flex lg:h-[200px] lg:w-[56rem] md:h-[100px] md:w-[41rem] h-[50px] w-[25rem] justify-evenly items-center bg-red-600 ">
+      <div className=" flex lg:h-[200px] lg:w-[56rem] md:h-[100px] md:w-[41rem] h-[50px] w-[25rem] ">
   
         <img
         src={images[currentImageIndex]}
         alt="Slideshow Image"
-        className="w-full h-full object-fill"
+        className=" lg:w-[32%] lg:h-[54%] w-[32%] h-[80%]"
         />
         
       </div>

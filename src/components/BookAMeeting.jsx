@@ -24,7 +24,7 @@ function BookAMeeting() {
                 hover: { scale: 2, y: '10%',scaleX:1,scaleY:1 }, 
               }}
               transition={{
-                duration: 0.4,
+                duration: 0.3,
                 ease: [1.25, 1, 1, 1],
               }}
             style={{
@@ -44,10 +44,7 @@ function BookAMeeting() {
           rest: { opacity: 0, y: 10 }, 
           hover: { opacity: 1, y: -20 }, 
         }}
-        transition={{
-          ease: 'easeInOut',
-          x: { stiffness:800, damping: 100}
-        }}
+
       >
         LET'S GROW !!
       </motion.span>

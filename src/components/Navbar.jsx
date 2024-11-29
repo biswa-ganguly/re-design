@@ -18,7 +18,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-[100]">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
         <a href="#" className="flex-shrink-0">

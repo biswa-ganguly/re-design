@@ -31,17 +31,21 @@ function Accordion() {
       key={index}
       className = "border-b border-gray-700 mb-4"
       > 
-      <button onClick = {() => accordionIsOpen(index)} className =" w-full flex justify-between items-center p-4 bg-white text-black rounded-lg shadow-md">
+      <button onClick = {() => accordionIsOpen(index)} className ={`w-full flex justify-between items-center p-4 bg-white text-black  shadow-md  ${
+        itIsOpen === index ? `rounded-t-lg`:`rounded-lg `
+      }`} >
 
         <span className =" text-lg font-semibold">{item.question}</span>
-        <span className="text-lg font-semibold ">{itIsOpen === index ? '-' : '^'}</span>
+        <span className="text-lg font-semibold ">{itIsOpen === index ? <img src="/Arrow2.svg" alt="arrow" className="h-5 w-5 rotate-90 duration-500" /> :<img src="/Arrow2.svg" alt="arrow" className="h-5 w-5 duration-500" />}</span>
 
       </button>
 
       {
         itIsOpen === index && (
           <div
-          className="p-4 bg-white rounded-lg text-black transition-all ease-in-out duration-300"
+          className={`p-4 bg-white rounded-b-lg text-black overflow-hidden transition-max-height duration-500 ${
+            itIsOpen === index ? `max-h-screen` : `max-h-0 `
+          }`}
         >
           {item.answere}
         </div>
