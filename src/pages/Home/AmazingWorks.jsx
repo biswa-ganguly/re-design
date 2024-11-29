@@ -84,10 +84,10 @@ const AmazingWorks = () => {
   ];
   return (
     <div className="flex flex-col gap-10 items-center justify-center my-10">
-      <h1 className="text-[#6735EA] text-center font-archivo text-5xl lg:text-7xl font-medium">
+      <h1 className="text-[#6735EA] text-center font-archivo text-5xl lg:text-7xl font-medium px-2">
         Our Amazing Works
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {works.map((work, index) => (
           <div key={index} className="px-2">
             <AmazingCard
