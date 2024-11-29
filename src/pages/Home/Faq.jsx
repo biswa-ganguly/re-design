@@ -37,7 +37,7 @@ function Faq() {
      <Accordion/>
     </div>
     
-    <div className = "h-[60vh] ">
+    <div className = "lg:h-[60vh] h-[100vh]">
       <div className = "flex lg:flex-row flex-col justify-between">
         <div className="flex flex-col">
           <div className =" w-full font-archivo text-[64px] leading-none p-10">We are not just any <span className =" font-archivo font-extralight text-[64px]">{splitLetters}</span>, <br />we are The Agenc-E</div>

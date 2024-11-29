@@ -23,7 +23,7 @@ function Founders() {
               <p className="font-light font-inter">Chief Executive Officer</p>
               <motion.p 
                        animate = {
-                        hoveredFounder ===1  ? {x:580,y:0, opacity:1} : {x:0, y:0 ,opacity:0}
+                        hoveredFounder ===1  ? {x:508,y:0, opacity:1} : {x:0, y:0 ,opacity:0}
                        }
                        transition = {{duration:0.3}}
               className = "absolute w-1/5 top-20 text-center left-24 z-40 font-inter text-white"
@@ -74,7 +74,7 @@ function Founders() {
               <p className="font-light font-inter">Chief Operating Officer</p>
               <motion.p 
                                      animate = {
-                                      hoveredFounder ===2  ? {x:-580,y:0, opacity:1} : {x:0, y:0 ,opacity:0}
+                                      hoveredFounder ===2  ? {x:-508,y:0, opacity:1} : {x:0, y:0 ,opacity:0}
                                      }
                                      transition = {{duration:0.3}}
 
