@@ -17,7 +17,8 @@ function WhyUs() {
        }}    
        className= " lg:hidden flex flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4">
       <div className ="flex justify-start items-center font-archivo text-[#FECE02] text-[80px] font-medium whitespace-nowrap">WHY US?</div>
-      <div className= "flex font-inter font-normal text-[20px] text-white pb-36 lg:text-start text-center">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div className= "flex font-inter font-normal text-[20px] text-white pb-36 lg:text-start text-center">At The Agenc-E, we’re not just about making things look good; we’re about making them work. Our unique balance of creativity, strategy, and execution ensures that every project isn’t just completed—it’s celebrated.
+</div>
       </div>
       </div>
 
@@ -31,7 +32,8 @@ function WhyUs() {
         top: '190px', 
       }} className= " lg:block hidden flex flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4 lg:h-[43rem] md:h-[0rem] h-[0rem] ">
         <div className ="flex justify-start items-center font-archivo text-[#FECE02] text-[80px] font-medium whitespace-nowrap">WHY US?</div>
-        <div className= "flex font-inter font-normal text-[20px] text-white pb-36 lg:text-start text-center">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div className= "flex font-inter font-normal text-[20px] text-white pb-36 lg:text-start text-center">At The Agenc-E, we’re not just about making things look good; we’re about making them work. Our unique balance of creativity, strategy, and execution ensures that every project isn’t just completed—it’s celebrated.
+</div>
         </div>
 
         <div className = "flex flex-col w-full justify-around items-center gap-32 lg:h-[140rem] md:h-[130rem] h-[120rem]  " 

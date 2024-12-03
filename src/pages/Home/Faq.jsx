@@ -40,7 +40,7 @@ function Faq() {
     <div className = "lg:h-[60vh] h-[100vh]">
       <div className = "flex lg:flex-row flex-col justify-between">
         <div className="flex flex-col">
-          <div className =" w-full font-archivo text-[64px] leading-none p-10">We are not just any <span className =" font-archivo font-extralight text-[64px]">{splitLetters}</span>, <br />we are The Agenc-E</div>
+          <div className =" w-full font-archivo text-[64px] leading-none p-10">At <strong>The Agenc-E</strong>, we don’t just work—we create, innovate, and deliver. Let’s make something amazing together.</div>
           <BookAMeetingV2/>
         </div>
 
