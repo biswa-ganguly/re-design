@@ -5,8 +5,8 @@ import RotateTriangle from "../../components/RotateTriangle";
 
 function AboutUs() {
   return (
-    <section className="py-12 bg-white overflow-hidden">
-      <h2 className="text-4xl lg:text-3xl mx-[180px] text-purple-700 font-semibold mb-2  whitespace-nowrap">
+    <section className="py-12 bg-white overflow-hidden relative">
+      <h2 className="text-4xl lg:text-3xl text-center text-purple-700 font-semibold mb-6  whitespace-nowrap">
         About Us
       </h2>
       <div className="w-screen text-center lg:flex lg:justify-center items-center gap-10 lg:gap-[20%] mx-[0%] px-3">
