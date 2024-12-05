@@ -13,7 +13,7 @@ const AmazingWorks = () => {
       title: "Bangla Konnection",
       description:
         "Migrated over 20,000 users, redesigned the UI/UX, and executed performance campaigns that brought the soul of Bengal to a thriving global audience.",
-      tags: ["Web Design", "Web Development"],
+      tags: ["Web Design", "Web Development", "Social Media Management", "Content Creation"],
       image: "/mockups/bk.png",
     },
     {
@@ -28,8 +28,8 @@ const AmazingWorks = () => {
       title: "Gulf Estates",
       description:
         "Reimagined luxury real estate in Dubai by designing a sleek web app, launching high-impact social campaigns, and generating quality leads that transformed their business landscape.",
-      tags: ["Web Design", "Web Development"],
-      image: "/mockups/gulf.png",
+        tags: ["Web Design", "Web Development", "Social Media Management", "Content Creation"],      
+        image: "/mockups/gulf.png",
     },
     {
       title: "Fashionism",

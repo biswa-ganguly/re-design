@@ -71,7 +71,7 @@ function Hero() {
 
       </div>
        <div className="flex flex-col gap-10 w-full justify-start items-start">
-      <div className = "flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-bold ">If you’ve landed here expecting just another agency pitch, you’re in for a surprise. Welcome to The Agenc-E, where rules are bent, boxes are broken, and ideas come alive. Born in Kolkata, we’re the perfect match for dreamers, misfits, and visionaries who dare to think differently!</div>
+      <div className = "flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-semibold ">If you’ve landed here expecting just another agency pitch, you’re in for a surprise. Welcome to The Agenc-E, where rules are bent, boxes are broken, and ideas come alive. Born in Kolkata, we’re the perfect match for dreamers, misfits, and visionaries who dare to think differently!</div>
       <BookAMeeting/>
   
       </div>

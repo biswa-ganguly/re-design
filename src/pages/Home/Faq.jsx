@@ -44,7 +44,7 @@ function Faq() {
           <BookAMeetingV2/>
         </div>
 
-        <img src="Frame48.svg" alt="frame" className ="p-10" />
+        <img src="Frame48.svg" alt="frame" className ="p-10 lg:inline-block hidden"  />
       </div>
     </div>
     </>

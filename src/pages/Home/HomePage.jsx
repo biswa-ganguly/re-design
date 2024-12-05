@@ -34,10 +34,10 @@ function HomePage() {
       <section id="why-us">
         <WhyUs />
       </section>
-      <section id="work">
+      <section id="">
         <Founders />
       </section>
-      <section id="">
+      <section id="work">
         <AmazingWorks />
       </section>
       <section id="">

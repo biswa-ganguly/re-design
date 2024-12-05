@@ -1,7 +1,7 @@
 const AmazingCard = ({ title, description, tags, image }) => {
   return (
-    <div className="md:w-[550px] md:h-[500px] lg:w-[620px] lg:h-[560px] w-[360px] h-[500px] rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center">
-      <div className="rounded-[16px] transform transition-transform duration-500 hover:scale-95 hover:rotate-2 hover:translate-x-1 hover:translate-y-1">
+    <div className="md:w-[550px] md:h-[500px] lg:w-[620px] lg:h-[610px] w-[360px]  rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
+      <div className="rounded-[16px] transform transition-transform duration-500 hover:scale-95 hover:rotate-2 hover:translate-x-1 hover:translate-y-1 ">
         <img
           src={image}
           alt={title}
@@ -9,7 +9,7 @@ const AmazingCard = ({ title, description, tags, image }) => {
         />
       </div>
 
-      <div className="flex gap-3 w-full">
+      <div className="flex gap-3 w-full flex-wrap">
         {tags?.map((array, index) => (
           <p
             key={index}

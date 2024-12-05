@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
         <a href="#" className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="w-12 h-12" />
+          <img src={logo} alt="Logo" className="12" />
         </a>
 
         
@@ -34,7 +34,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               offset={-80}
-              className="text-sm font-medium text-gray-800 hover:text-gray-600 tracking-wider cursor-pointer"
+              className="text- font-semibold text-gray-800 hover:text-gray-600 tracking-wide cursor-pointer"
             >
               {item.name}
             </Link>

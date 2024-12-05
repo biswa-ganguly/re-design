@@ -157,7 +157,7 @@ function Create() {
           </div>
         </div>
 
-        <p className="text-sm text-gray-400">
+        <p className="text-lg text-gray-100 px-24">
           At The Agenc-E, we believe creativity isn’t something you can
           mass-produce. Every campaign, strategy, and design is crafted with
           precision and personality—just like your business.{" "}
