@@ -101,7 +101,7 @@ function Founders() {
       </div>
 
       {/* Founders Mobile Version  */}
-      <div className="flex flex-col md:hidden items-center justify-center w-full px-5 gap-14 mt-14">
+      <div className="flex flex-col md:hidden items-center justify-center w-full px-5 gap-14 my-14">
         <h1 className="text-4xl font-semibold text-[#6735EA] font-archivo tracking-wide uppercase text-center">Meet Our Founders</h1>
         <div className=" w-full flex flex-col justify-center items-center">
           <div className="relative flex justify-center items-center">

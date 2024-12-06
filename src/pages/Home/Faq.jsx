@@ -41,7 +41,7 @@ function Faq() {
         </div>
         <Accordion />
       </div>
-      <div className="lg:h-[60vh] h-[100vh]">
+      <div className="lg:h-[60vh] mt-10 mb-1">
         <div className="flex lg:flex-row flex-col justify-between">
           <div className="flex flex-col">
             <div className=" w-full font-archivo text-[64px] leading-none p-10">
@@ -54,7 +54,7 @@ function Faq() {
           <img
             src="Frame48.svg"
             alt="frame"
-            className="p-10 hidden lg:inline-block"
+            className="p-10 inline-block"
           />
         </div>
       </div>
