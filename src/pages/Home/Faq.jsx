@@ -54,7 +54,7 @@ function Faq() {
           <img
             src="Frame48.svg"
             alt="frame"
-            className="p-10 lg:inline-block hidden"
+            className="p-10 hidden lg:inline-block"
           />
         </div>
       </div>

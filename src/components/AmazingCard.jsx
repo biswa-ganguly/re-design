@@ -1,21 +1,53 @@
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
 const AmazingCard = ({ title, description, tags, image }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const mobileAnimation = {
+    normal: { rotate: 0, scale: 1 },
+    animated: { rotate: 2, scale: 0.95 },
+  };
+
+  const pcAnimation = {
+    normal: { scale: 1 },
+    hover: { scale: 0.95, rotate: 2 },
+  };
+
   return (
-    <div className="md:w-[550px] md:h-[500px] lg:w-[620px] lg:h-[610px] w-[360px]  rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
-      <div className="rounded-[16px] transform transition-transform duration-500 hover:scale-95 hover:rotate-2 hover:translate-x-1 hover:translate-y-1 ">
-        <img
+    <div className="md:w-[550px] md:h-[500px] lg:w-[620px] lg:h-[610px] w-[360px] rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
+      <div className="rounded-[16px] transform transition-transform duration-500">
+        <motion.img
           src={image}
           alt={title}
           className="md:w-[520px] md:h-[270px] lg:w-[588px] lg:h-[320px] w-[350px] h-[200px] rounded-[16px]"
+          initial="normal"
+          whileInView={isMobile ? "animated" : "normal"}
+          whileHover={!isMobile ? "hover" : "normal"}
+          viewport={{ once: false, amount: 0.85, margin: "200px 0px" }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          variants={isMobile ? mobileAnimation : pcAnimation}
         />
       </div>
 
       <div className="flex gap-3 w-full flex-wrap">
-        {tags?.map((array, index) => (
+        {tags?.map((tag, index) => (
           <p
             key={index}
             className="w-fit rounded-[16px] bg-[#FECE02] py-[6px] px-[12px] font-medium"
           >
-            {array}
+            {tag}
           </p>
         ))}
       </div>

@@ -1,106 +1,29 @@
-import Separator from "../../components/Separator";
-
 function Create() {
   const sections = [
     {
       title: "Social Media",
       description:
-        "Social media is no longer optional–it’s where your brand gets seen, heard, and loved. And we’re here to turn up the volume.",
-      features: [
-        {
-          heading: "Social Media Marketing",
-          description:
-            "Campaigns that convert, posts that pop, and strategies that make an impact.",
-        },
-        {
-          heading: "Content Creation",
-          description: "Not just content, but connections that matter.",
-        },
-        {
-          heading: "Engagement & Optimization",
-          description:
-            "Watch your audience grow while your competitors wonder what just happened.",
-        },
-      ],
+        "Social media isn’t optional—it’s where your brand gets seen, heard, and loved. With expert Social Media Marketing, we create campaigns that convert and posts that pop, ensuring your brand stays ahead of the curve. Our Content Creation doesn’t just engage; it builds meaningful connections that matter. And with our optimization strategies, your audience grows while competitors wonder what hit them.",
     },
     {
       title: "Website",
       description:
-        "Your website is more than just a digital address—it’s your brand’s front door. Let’s make sure it’s irresistible.",
-      features: [
-        {
-          heading: "Custom Website Design",
-          description:
-            "Fully responsive, user-friendly, and SEO-smart designs that stand out.",
-        },
-        {
-          heading: "Professional Development",
-          description:
-            "Behind every great design is a robust backend. We make sure your site works as great as it looks.",
-        },
-      ],
+        "Your website is your brand’s front door, and we make it impossible to ignore. Through Custom Website Design, we deliver responsive, user-friendly, and SEO-smart solutions that captivate visitors. With Professional Development backing the design, your website functions seamlessly, delivering both form and function in perfect harmony.",
     },
     {
       title: "Search Engine",
       description:
-        "The internet’s a big place, but your audience shouldn’t have to dig to find you.",
-      features: [
-        {
-          heading: "SEO Services",
-          description:
-            "Rise above the noise with strategies that boost your search engine rankings.",
-        },
-        {
-          heading: "Local SEO",
-          description:
-            "Perfect for businesses looking to dominate their local markets.",
-        },
-        {
-          heading: "SEM Expertise",
-          description:
-            "Targeted ads that put your brand right where it needs to be.",
-        },
-      ],
+        "In the vastness of the internet, we make sure your audience finds you first. Our SEO Services boost your rankings, ensuring your brand rises above the noise. For dominating your local market, our Local SEO hits the bullseye. And with SEM Expertise, we create targeted ads that put your brand exactly where it needs to be.",
     },
     {
       title: "Campaigns",
       description:
-        "Every campaign we craft tells a story—your story, authentically and impactfully.",
-      features: [
-        {
-          heading: "Data-Driven Strategies",
-          description: "Insights are at the core of every move we make.",
-        },
-        {
-          heading: "Digital Marketing Campaigns",
-          description:
-            "From PPC to email, we ensure every dollar you spend delivers results.",
-        },
-        {
-          heading: "Targeted Ad Campaigns",
-          description: "Messaging that lands exactly where it counts.",
-        },
-      ],
+        "Every campaign we create is built to deliver results. With our Digital Marketing Campaigns, we craft compelling stories that resonate with your audience. Backed by data and insights, our strategies make every penny count. Through Targeted Ad Campaigns, we deliver messaging that hits all the right notes, exactly where it matters.",
     },
     {
       title: "Brand Identity",
       description:
-        "A brand is more than just a logo—it’s your promise to the world. Let’s make it unforgettable.",
-      features: [
-        {
-          heading: "Logo Design",
-          description: "Simple, bold, and packed with meaning.",
-        },
-        {
-          heading: "Full Branding Solutions",
-          description:
-            "From typography to tone of voice, we build brands that resonate.",
-        },
-        {
-          heading: "Corporate Identity",
-          description: "Cohesive branding across every touchpoint.",
-        },
-      ],
+        "Your brand isn’t just a logo—it’s your promise to the world, and we make that promise unforgettable. Our Logo Design combines simplicity, boldness, and meaning to leave a lasting impression. With Full Branding Solutions, we create a cohesive identity that includes typography, tone of voice, and more. And through Corporate Identity services, we ensure your brand is seamlessly represented across every touchpoint.",
     },
   ];
 
@@ -157,30 +80,26 @@ function Create() {
           </div>
         </div>
 
-        <p className="text-lg text-gray-100 px-24">
+        <p className="text-lg text-gray-100 px-5 lg:px-24">
           At The Agenc-E, we believe creativity isn’t something you can
           mass-produce. Every campaign, strategy, and design is crafted with
           precision and personality—just like your business.{" "}
         </p>
       </div>
-      <div className="grid gap-4 mx-auto px-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid gap-4 mx-auto lg:px10- grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         {sections.map((section, index) => (
           <div
             key={index}
             className="flex flex-col p-10 gap-5 text-gray-400 hover:text-white transition-colors duration-200"
           >
-            <p className="text-2xl font-semibold">0{index + 1}</p>
-            <h1 className="uppercase font-semibold text-xl">{section.title}</h1>
-            <p className="text-lg">{section.description}</p>
+            <div className="flex lg:flex-col gap-2 items-center lg:items-baseline">
+              <p className="text-2xl font-semibold">0{index + 1}</p>
+              <h1 className="uppercase font-semibold text-xl">
+                {section.title}
+              </h1>
+            </div>
 
-            <ul className="space-y-2 list-disc list-outside pl-6">
-              {section.features.map((feature, featureIndex) => (
-                <li key={featureIndex}>
-                  <strong>{feature.heading}:</strong>{" "}
-                  <span>{feature.description}</span>
-                </li>
-              ))}
-            </ul>
+            <p className="text-lg">{section.description}</p>
           </div>
         ))}
       </div>
