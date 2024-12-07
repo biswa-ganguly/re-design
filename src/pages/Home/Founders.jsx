@@ -101,12 +101,15 @@ function Founders() {
       </div>
 
       {/* Founders Mobile Version  */}
+
+
       <div className="flex flex-col md:hidden items-center justify-center w-full px-5 gap-14 my-14">
         <h1 className="text-4xl font-semibold text-[#6735EA] font-archivo tracking-wide uppercase text-center">Meet Our Founders</h1>
         <div className=" w-full flex flex-col justify-center items-center">
           <div className="relative flex justify-center items-center">
             <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02] "></div>
-            <img src="/ceo.png" className="absolute " />
+            {/* ceo image */}
+            <img src="/ceo.png" className="absolute animate-slide-in-left" />
           </div>
           <div className="flex flex-col gap-3 mt-5 px-5">
             <div>
@@ -133,7 +136,8 @@ function Founders() {
         <div className=" w-full flex flex-col justify-center items-center">
           <div className="relative flex justify-center items-center">
             <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02]"></div>
-            <img src="/coo.png" className="absolute" />
+            {/* coo image */}
+            <img src="/coo.png" className="absolute animate-slide-in-right" />
           </div>
           <div className="flex flex-col gap-3 mt-5 px-5">
             <div>
