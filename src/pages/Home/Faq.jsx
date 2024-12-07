@@ -36,8 +36,8 @@ function Faq() {
   return (
     <>
       {/* Desktop Section */}
-      <div className="lg:block hidden h-[80vh] bg-[#6735EA]">
-        <div className="flex flex-row justify-between p-3">
+      <div className="lg:block hidden lg:h-[80vh] bg-[#6735EA]">
+        <div className="flex flex-row justify-between p-3 lg:px-[7%]">
           <div className="flex justify-start items-start text-[#FECE02] font-archivo lg:text-[80px] text-[45px] lg:p-7 p-0 font-semibold">
             FAQs
           </div>
@@ -72,14 +72,14 @@ function Faq() {
         <div className="lg:h-[60vh] mt-10 mb-1">
           <div className="flex lg:flex-row flex-col justify-between">
             <div className="flex flex-col">
-              <div className="w-full font-archivo text-[64px] leading-none p-10">
+              <div className="w-full font-archivo text-[58px] leading-none p-10">
                 At <strong>The Agenc-E</strong>, we don’t just work—we create,
                 innovate, and deliver. Let’s make something amazing together.
               </div>
               <BookAMeetingV2 />
             </div>
 
-            <img src="Frame48.svg" alt="frame" className="p-10 inline-block" />
+            <img src="Frame48.svg" alt="frame" className="p-10 inline-block animate-swing" />
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ function Faq() {
       {/* Mobile Section */}
 
 
-      <div className="lg:hidden block h-[80vh] bg-[#6735EA]">
+      <div className="lg:hidden block h-[60vh] bg-[#6735EA]">
         <div className="flex flex-row justify-between p-3">
           <div className="flex justify-start items-start text-[#FECE02] font-archivo lg:text-[80px] text-[45px] lg:p-7 pt-4 font-semibold">
             FAQs
@@ -104,7 +104,7 @@ function Faq() {
             />
           </div>
         </div>
-        <div className="p-6">
+        <div className="py-6">
           <Accordion />
         </div>
       </div>

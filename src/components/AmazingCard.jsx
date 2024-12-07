@@ -27,7 +27,7 @@ const AmazingCard = ({ title, description, tags, image }) => {
 
   return (
     <div className="md:w-[550px] md:h-[570px] lg:w-[620px] lg:h-[610px] w-[360px] rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
-      <div className="rounded-[16px] transform transition-transform duration-500">
+      <div className="rounded-[16px] transform transition-transform duration-100">
         <motion.img
           src={image}
           alt={title}
@@ -36,7 +36,7 @@ const AmazingCard = ({ title, description, tags, image }) => {
           whileInView={isMobile ? "animated" : "normal"}
           whileHover={!isMobile ? "hover" : "normal"}
           viewport={{ once: false, amount: 0.85, margin: "200px 0px" }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
           variants={isMobile ? mobileAnimation : pcAnimation}
         />
       </div>

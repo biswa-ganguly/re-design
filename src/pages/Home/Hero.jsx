@@ -43,7 +43,7 @@ function Hero() {
 
           {/* <button className="lg:h-[100px] lg:w-[300px] md:h-[60px] md:w-[150px] w-[100px] h-[40px] bg-[#6735EA] rounded-full"></button> */}
           <ToggleButton />
-          <div className=" flex-col mb-16 space-y-0 -mt-10 hidden lg:flex">
+          <div className="hidden flex-col mb-16 space-y-0 -mt-10  lg:flex">
             <div className="font-architects text-2xl font-light whitespace-nowrap">
               Just a button
             </div>
@@ -70,18 +70,18 @@ function Hero() {
           <p className="lg:text-[120px] md:text-[80px] text-[50px] font-archivo font-medium whitespace-nowrap">
             STAND OUT
           </p>
-          <div className="flex flex-col mt-8 items-end justify-end md:block lg:hidden font-architects font-light whitespace-nowrap w-11 lg:-mt-10 gap-0">
+          {/* <div className="flex flex-col mt-8 items-end justify-end md:block lg:hidden font-architects font-light whitespace-nowrap w-11 lg:-mt-10 gap-0">
             <img
               src="/Arrow.svg"
               alt="Arrow"
               className=" flex md:block lg:hidden mb-2 md:w-12 md:h-12 -rotate-[40deg]"
             />
             Just a button
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col gap-10 w-full justify-start items-start">
-        <div className="flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-semibold ">
+        <div className="flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-medium ">
           If you’ve landed here expecting just another agency pitch, you’re in
           for a surprise. Welcome to The Agenc-E, where rules are bent, boxes
           are broken, and ideas come alive. Born in Kolkata, we’re the perfect
