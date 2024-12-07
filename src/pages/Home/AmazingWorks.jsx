@@ -10,26 +10,35 @@ const AmazingWorks = () => {
       image: "/mockups/universal.png",
     },
     {
-      title: "Bangla Konnection",
-      description:
-        "Migrated over 20,000 users, redesigned the UI/UX, and executed performance campaigns that brought the soul of Bengal to a thriving global audience.",
-      tags: ["Web Design", "Web Development", "Social Media Management", "Content Creation"],
-      image: "/mockups/bk.png",
-    },
-    {
       title: "Waaree Solar Americas",
       description:
         "For this Texas-based solar leader, we developed a cutting-edge website with seamless geo-redirects, creating an intuitive and clutter-free user experience that mirrored their sun-powered solutions.",
       tags: ["Web Design", "Web Development"],
       image: "/mockups/waaree.png",
     },
-
+    {
+      title: "Bangla Konnection",
+      description:
+        "Migrated over 20,000 users, redesigned the UI/UX, and executed performance campaigns that brought the soul of Bengal to a thriving global audience.",
+      tags: [
+        "Web Design",
+        "Web Development",
+        "Social Media Management",
+        "Content Creation",
+      ],
+      image: "/mockups/bk.png",
+    },
     {
       title: "Gulf Estates",
       description:
         "Reimagined luxury real estate in Dubai by designing a sleek web app, launching high-impact social campaigns, and generating quality leads that transformed their business landscape.",
-        tags: ["Web Design", "Web Development", "Social Media Management", "Content Creation"],      
-        image: "/mockups/gulf.png",
+      tags: [
+        "Web Design",
+        "Web Development",
+        "Social Media Management",
+        "Content Creation",
+      ],
+      image: "/mockups/gulf.png",
     },
     {
       title: "Fashionism",

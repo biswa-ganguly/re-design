@@ -89,84 +89,85 @@ function Founders() {
             className="absolute w-1/5 top-20 text-center right-28 z-40 font-inter text-white"
           >
             {" "}
-            My vision is as straightforward as it gets-to develop home run
-            strategies and our team of data- crunching maniacs will make it
-            happen. We're here to tell you that there is no such rulebook to
-            success, and there exists more than one way to win. As far as what I
-            perceive the brand to be, we're like a kaleidoscope of talent and
-            creativity. We bring a clean slate entwined with a passionate
-            approach to everything we do. We're here to build with you and that
-            is what makes the difference.
+            My unorthodox self believes in the adage "the most absurd of things
+            click" and the ones called mad ideas are often the source of
+            marketing success stories. I see The Agenc-E as a one-stop shop for
+            businesses trying to establish a brand because a firm may exist but
+            a brand needs to be developed. While every brand here aims for the
+            spotlight, making flashy moves in the hopes to go viral, The Agenc-E
+            isn't here vying for the mic, we want to be behind the scenes and
+            see the real stars—our clients—win big.
           </motion.p>
         </div>
       </div>
 
       {/* Founders Mobile Version  */}
 
+      <div className="flex flex-col lg:hidden items-center justify-center w-full px-5 gap-14 my-14">
+        <h1 className="text-4xl font-semibold text-[#6735EA] font-archivo tracking-wide uppercase text-center">
+          Meet Our Founders
+        </h1>
 
-      <div className="flex flex-col md:hidden items-center justify-center w-full px-5 gap-14 my-14">
-      <h1 className="text-4xl font-semibold text-[#6735EA] font-archivo tracking-wide uppercase text-center">
-        Meet Our Founders
-      </h1>
-
-      {/* CEO Section */}
-      <div className="w-full flex flex-col justify-center items-center">
-        <Slide direction="left" triggerOnce>
-          <div className="relative flex justify-center items-center">
-            <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02]"></div>
-            {/* CEO Image */}
-            <img src="/ceo.png" className="absolute" alt="CEO" />
-          </div>
-        </Slide>
-        <div className="flex flex-col gap-3 mt-5 px-5">
-          <div>
-            <h1 className="text-3xl font-medium font-archivo">Sourodeep Ghosh</h1>
-            <p className="text-[#6735EA] font-inter font-medium">
-              Chief Executive Officer
+        {/* CEO Section */}
+        <div className="w-full flex flex-col justify-center items-center">
+          <Slide direction="left" triggerOnce>
+            <div className="relative flex justify-center items-center">
+              <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02]"></div>
+              {/* CEO Image */}
+              <img src="/ceo.png" className="absolute" alt="CEO" />
+            </div>
+          </Slide>
+          <div className="flex flex-col gap-3 mt-5 px-5">
+            <div>
+              <h1 className="text-3xl font-medium font-archivo">
+                Sourodeep Ghosh
+              </h1>
+              <p className="text-[#6735EA] font-inter font-medium">
+                Chief Executive Officer
+              </p>
+            </div>
+            <p className="font-inter font-medium">
+              My vision is as straightforward as it gets—to develop home run
+              strategies and our team of data-crunching maniacs will make it
+              happen. We're here to tell you that there is no such rulebook to
+              success, and there exists more than one way to win. As far as what
+              I perceive the brand to be, we're like a kaleidoscope of talent
+              and creativity. We bring a clean slate entwined with a passionate
+              approach to everything we do. We're here to build with you and
+              that is what makes the difference.
             </p>
           </div>
-          <p className="font-inter font-medium">
-            My vision is as straightforward as it gets—to develop home run
-            strategies and our team of data-crunching maniacs will make it
-            happen. We're here to tell you that there is no such rulebook to
-            success, and there exists more than one way to win. As far as what I
-            perceive the brand to be, we're like a kaleidoscope of talent and
-            creativity. We bring a clean slate entwined with a passionate
-            approach to everything we do. We're here to build with you and that
-            is what makes the difference.
-          </p>
         </div>
-      </div>
 
-      {/* COO Section */}
-      <div className="w-full flex flex-col justify-center items-center">
-        <Slide direction="right" triggerOnce>
-          <div className="relative flex justify-center items-center">
-            <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02]"></div>
-            {/* COO Image */}
-            <img src="/coo.png" className="absolute" alt="COO" />
-          </div>
-        </Slide>
-        <div className="flex flex-col gap-3 mt-5 px-5">
-          <div>
-            <h1 className="text-3xl font-medium font-archivo">Hreed Gupta</h1>
-            <p className="text-[#6735EA] font-inter font-medium">
-              Chief Operating Officer
+        {/* COO Section */}
+        <div className="w-full flex flex-col justify-center items-center">
+          <Slide direction="right" triggerOnce>
+            <div className="relative flex justify-center items-center">
+              <div className="w-[370px] h-[430px] rotate-6 translate-y-1 bg-[#FECE02]"></div>
+              {/* COO Image */}
+              <img src="/coo.png" className="absolute" alt="COO" />
+            </div>
+          </Slide>
+          <div className="flex flex-col gap-3 mt-5 px-5">
+            <div>
+              <h1 className="text-3xl font-medium font-archivo">Hreed Gupta</h1>
+              <p className="text-[#6735EA] font-inter font-medium">
+                Chief Operating Officer
+              </p>
+            </div>
+            <p className="font-inter font-medium">
+              My unorthodox self believes in the adage "the most absurd of
+              things click" and the ones called mad ideas are often the source
+              of marketing success stories. I see The Agenc-E as a one-stop shop
+              for businesses trying to establish a brand because a firm may
+              exist but a brand needs to be developed. While every brand here
+              aims for the spotlight, making flashy moves in the hopes to go
+              viral, The Agenc-E isn't here vying for the mic, we want to be
+              behind the scenes and see the real stars—our clients—win big.
             </p>
           </div>
-          <p className="font-inter font-medium">
-            My unorthodox self believes in the adage "the most absurd of things
-            click" and the ones called mad ideas are often the source of
-            marketing success stories. I see The Agenc-E as a one-stop shop for
-            businesses trying to establish a brand because a firm may exist but
-            a brand needs to be developed. While every brand here aims for the
-            spotlight, making flashy moves in the hopes to go viral, The
-            Agenc-E isn't here vying for the mic, we want to be behind the
-            scenes and see the real stars—our clients—win big.
-          </p>
         </div>
       </div>
-    </div>
       {/* Founders Mobile Version  */}
     </>
   );

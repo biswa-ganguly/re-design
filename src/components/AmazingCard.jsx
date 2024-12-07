@@ -26,7 +26,7 @@ const AmazingCard = ({ title, description, tags, image }) => {
   };
 
   return (
-    <div className="md:w-[550px] md:h-[500px] lg:w-[620px] lg:h-[610px] w-[360px] rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
+    <div className="md:w-[550px] md:h-[570px] lg:w-[620px] lg:h-[610px] w-[360px] rounded-[32px] border-[4px] border-[#6735EA] flex flex-col gap-5 py-4 px-5 items-center pb-10">
       <div className="rounded-[16px] transform transition-transform duration-500">
         <motion.img
           src={image}
