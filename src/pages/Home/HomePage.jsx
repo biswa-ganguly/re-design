@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 function HomePage() {
   return (
-    <div>
+    <div className="">
       {/* Navbar */}
       <Navbar />
 
