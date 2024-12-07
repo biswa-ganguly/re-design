@@ -39,7 +39,7 @@ const Footer = () => {
             href="mailto:contact.theagenc.e@gmail.com"
             className="underline font-medium"
           >
-            contact.theagenc.e@gmail.com
+            info@theagence.in
           </a>
           <p className="mt-5 font-medium">
             81/13 Manmohan Bhawan 3rd Floor, <br />
