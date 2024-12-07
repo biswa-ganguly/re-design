@@ -87,7 +87,7 @@ function Faq() {
       {/* Mobile Section */}
 
 
-      <div className="lg:hidden block h-[60vh] bg-[#6735EA]">
+      <div className="lg:hidden block h-[80%] bg-[#6735EA]">
         <div className="flex flex-row justify-between p-3">
           <div className="flex justify-start items-start text-[#FECE02] font-archivo lg:text-[80px] text-[45px] lg:p-7 pt-4 font-semibold">
             FAQs

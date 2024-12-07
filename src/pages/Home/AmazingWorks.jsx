@@ -1,10 +1,28 @@
 import AmazingCard from "../../components/AmazingCard";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Carousel } from "react-responsive-carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const AmazingWorks = () => {
+  const CustomPrevArrow = (onClickHandler) => (
+    <button
+      type="button"
+      onClick={onClickHandler}
+      className="absolute left-5 top-[20%] transform -translate-y-1/2 bg-tranparent rounded-full px-2   z-10"
+    >
+      <FaChevronLeft className="text-xl text-[#6735EA]" />
+    </button>
+  );
+
+  const CustomNextArrow = (onClickHandler) => (
+    <button
+      type="button"
+      onClick={onClickHandler}
+      className="absolute right-5 top-[20%] transform -translate-y-1/2 bg-tranparent rounded-full px-2  z-10"
+    >
+      <FaChevronRight className="text-xl text-[#6735EA]" />
+    </button>
+  );
   const works = [
     {
       title: "Universal Distribution LLC",
@@ -58,7 +76,6 @@ const AmazingWorks = () => {
       tags: ["Web Design", "Web Development"],
       image: "/mockups/synergyTea.png",
     },
-
     {
       title: "Samshiti",
       description:
@@ -80,13 +97,6 @@ const AmazingWorks = () => {
       tags: ["Web Design", "Web Development"],
       image: "/mockups/learningPanda.png",
     },
-    // {
-    //   title: "Zumi",
-    //   description:
-    //     "Redesigned their e-commerce site with Shopify’s sleekest features, making it user-friendly, mobile-ready, and checkout-smooth—just like their hypoallergenic brass jewelry.",
-    //   tags: ["Branding", "Social Media"],
-    //   image: "/mockups/",
-    // },
     {
       title: "PCG",
       description:
@@ -96,73 +106,56 @@ const AmazingWorks = () => {
     },
   ];
 
-  const sliderSettings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
-
-  function NextArrow(props) {
-    const { onClick } = props;
-    return (
-      <div
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-lg"
-        style={{ fontSize: "18px", color: "#4A4A4A" }}
-        onClick={onClick}
-      >
-        <FaChevronRight />
-      </div>
-    );
-  }
-  function PrevArrow(props) {
-    const { onClick } = props;
-    return (
-      <div
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-lg"
-        style={{ fontSize: "18px", color: "#4A4A4A" }}
-        onClick={onClick}
-      >
-        <FaChevronLeft />
-      </div>
-    );
-  }
   return (
     <div className="flex flex-col gap-10 items-center justify-center my-10">
       <h1 className="text-[#6735EA] text-center font-archivo text-5xl lg:text-7xl font-medium px-2">
         Our Amazing Works
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center items-center">
         {works.map((work, index) => (
           <div key={index} className="px-2 hidden md:inline-block">
-            <div className="">
-              <AmazingCard
-                title={work.title}
-                description={work.description}
-                tags={work.tags}
-                image={work.image}
-              />
-            </div>
+            <AmazingCard
+              title={work.title}
+              description={work.description}
+              tags={work.tags}
+              image={work.image}
+            />
           </div>
         ))}
       </div>
 
-      <div className="w-full overflow-hidden md:hidden flex justify-center items-center">
-        <Slider {...sliderSettings} className="w-full max-w-4xl">
-          {works.map((work, index) => (
-            <div key={index} className="px-10">
-              <AmazingCard
-                title={work.title}
-                description={work.description}
-                tags={work.tags}
-                image={work.image}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <div className="w-full md:hidden flex justify-center items-center">
+      <Carousel
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={false}
+        interval={2500}
+        stopOnHover={true}
+        className="w-full h-full"
+        renderArrowPrev={(onClickHandler, hasPrev) =>
+          hasPrev && CustomPrevArrow(onClickHandler)
+        }
+        renderArrowNext={(onClickHandler, hasNext) =>
+          hasNext && CustomNextArrow(onClickHandler)
+        }
+      >
+        {works.map((work, index) => (
+          <div
+            key={index}
+            className="flex justify-center items-center"
+          >
+            <AmazingCard
+              title={work.title}
+              description={work.description}
+              tags={work.tags}
+              image={work.image}
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
+
     </div>
   );
 };
