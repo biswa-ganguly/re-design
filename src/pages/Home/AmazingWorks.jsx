@@ -1,4 +1,8 @@
 import AmazingCard from "../../components/AmazingCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const AmazingWorks = () => {
   const works = [
@@ -91,6 +95,40 @@ const AmazingWorks = () => {
       image: "/mockups/pcg.png",
     },
   ];
+
+  const sliderSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  function NextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-lg"
+        style={{ fontSize: "18px", color: "#4A4A4A" }}
+        onClick={onClick}
+      >
+        <FaChevronRight />
+      </div>
+    );
+  }
+  function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-lg"
+        style={{ fontSize: "18px", color: "#4A4A4A" }}
+        onClick={onClick}
+      >
+        <FaChevronLeft />
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col gap-10 items-center justify-center my-10">
       <h1 className="text-[#6735EA] text-center font-archivo text-5xl lg:text-7xl font-medium px-2">
@@ -98,15 +136,32 @@ const AmazingWorks = () => {
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {works.map((work, index) => (
-          <div key={index} className="px-2">
-            <AmazingCard
-              title={work.title}
-              description={work.description}
-              tags={work.tags}
-              image={work.image}
-            />
+          <div key={index} className="px-2 hidden md:inline-block">
+            <div className="">
+              <AmazingCard
+                title={work.title}
+                description={work.description}
+                tags={work.tags}
+                image={work.image}
+              />
+            </div>
           </div>
         ))}
+      </div>
+
+      <div className="w-full overflow-hidden md:hidden flex justify-center items-center">
+        <Slider {...sliderSettings} className="w-full max-w-4xl">
+          {works.map((work, index) => (
+            <div key={index} className="px-10">
+              <AmazingCard
+                title={work.title}
+                description={work.description}
+                tags={work.tags}
+                image={work.image}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
