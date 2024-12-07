@@ -76,7 +76,9 @@ function Faq() {
                 At <strong>The Agenc-E</strong>, we don’t just work—we create,
                 innovate, and deliver. Let’s make something amazing together.
               </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
               <BookAMeetingV2 />
+              </a>
             </div>
 
             <img src="Frame48.svg" alt="frame" className="p-10 inline-block animate-swing" />
@@ -127,7 +129,7 @@ function Faq() {
             </p>
           </div>
           <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
-            BOOK A MEETING
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">BOOK A MEETING</a>
           </button>
         </div>
       </div>

@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from "react";
-
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "/assets/logo.svg";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScrollWithOffset = (e, targetId) => {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      // Scroll the element into view
+      window.scrollTo({
+        top: targetElement.offsetTop - 80, // Adjust this value for your desired offset (e.g., 80px)
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+    setIsOpen(false); // Close the menu on mobile after clicking a link
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,23 +46,21 @@ const Navbar = () => {
       } z-[100] transition-all duration-300 shadow-md`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="flex-shrink-0">
+        <a href="/" className="flex-shrink-0">
           <img src={logo} alt="Logo" className="w-20" />
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
           {navigation.map((item) => (
-            <Link
+            <a
               key={item.name}
-              to={item.to}
-              smooth={true}
-              duration={500}
-              offset={-80}
+              href={`#${item.to}`}
+              onClick={(e) => handleScrollWithOffset(e, item.to)}
               className="font-semibold text-gray-800 hover:text-[#6735EA] tracking-wide cursor-pointer"
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -70,17 +81,14 @@ const Navbar = () => {
         <div className="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-white z-50">
           <div className="flex flex-col items-center space-y-6 py-10">
             {navigation.map((item) => (
-              <Link
+              <a
                 key={item.name}
-                to={item.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                onClick={() => setIsOpen(false)}
+                href={`#${item.to}`}
+                onClick={(e) => handleScrollWithOffset(e, item.to)}
                 className="block text-lg font-medium text-gray-800 hover:text-gray-600 tracking-wider"
               >
                 {item.name}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

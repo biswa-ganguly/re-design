@@ -51,11 +51,11 @@ const Footer = () => {
           <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
             Services
           </h1>
-          <a href="/">Social Media</a>
-          <a href="/">Website Development</a>
-          <a href="/">Brand Identity</a>
-          <a href="/">Campaign</a>
-          <a href="/">SEO Optimization</a>
+          <span href="">Social Media</span>
+          <span href="">Website Development</span>
+          <span href="">Brand Identity</span>
+          <span href="">Campaign</span>
+          <span href="">SEO Optimization</span>
         </div>
         <div className="hidden lg:flex flex-col px-14 gap-[2px]">
           <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
@@ -73,12 +73,12 @@ const Footer = () => {
           </a>
         </div>
         <div className="hidden px-14 py-3 lg:flex gap-5 w-[250px] lg:justify-end">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/theagenc.e?igsh=MWxhNzlicmtkZ2hpaA==" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={25} />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          {/* <a href="" target="_blank" rel="noopener noreferrer">
             <FaXTwitter size={25} />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/company/the-agenc-e/"
             target="_blank"
@@ -94,11 +94,11 @@ const Footer = () => {
             <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
               Services
             </h1>
-            <a href="/">Social Media</a>
-            <a href="/">Website Development</a>
-            <a href="/">Brand Identity</a>
-            <a href="/">Campaign</a>
-            <a href="/">SEO Optimization</a>
+            <span href="">Social Media</span>
+          <span href="">Website Development</span>
+          <span href="">Brand Identity</span>
+          <span href="">Campaign</span>
+          <span href="">SEO Optimization</span>
           </div>
           <div className="flex flex-col px-10 gap-[2px]">
             <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
@@ -117,12 +117,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="px-10 py-3  flex lg:hidden gap-5 w-[250px] lg:justify-end">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/theagenc.e?igsh=MWxhNzlicmtkZ2hpaA==" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={25} />
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          {/* <a href="" target="_blank" rel="noopener noreferrer">
             <FaXTwitter size={25} />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/company/the-agenc-e/"
             target="_blank"

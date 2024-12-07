@@ -94,11 +94,15 @@ function Hero() {
           differently!
         </div>
         <div className="lg:block hidden">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
           <BookAMeeting />
+          </a>
         </div>
         <div className="lg:hidden flex items-center justify-center w-full">
           <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
-            BOOK A MEETING
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
+              Book a Meeting
+            </a>
           </button>
         </div>
       </div>
