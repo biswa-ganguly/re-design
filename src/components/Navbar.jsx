@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "/assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +30,12 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 ${
         isScrolled ? "bg-white " : "bg-transparent"
-      } z-[100] transition-all duration-300`}
+      } z-[100] transition-all duration-300 shadow-md`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="w-12" />
-        </a>
+        <Link to="/" className="flex-shrink-0">
+          <img src={logo} alt="Logo" className="w-20" />
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">

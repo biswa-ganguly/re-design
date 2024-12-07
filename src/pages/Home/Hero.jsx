@@ -39,7 +39,11 @@ function Hero() {
           <p className="  lg:text-[120px] md:text-[80px] text-[50px] font-archivo text-[#6735EA] font-medium">
             BRANDS
           </p>
-          <img src="/Union.svg" alt="star" className="lg:h-24 md:h-16 h-12" />
+          <img
+            src="/Union.svg"
+            alt="star"
+            className="lg:h-24 md:h-16 h-12 animate-bounce"
+          />
 
           {/* <button className="lg:h-[100px] lg:w-[300px] md:h-[60px] md:w-[150px] w-[100px] h-[40px] bg-[#6735EA] rounded-full"></button> */}
           <ToggleButton />
@@ -80,6 +84,7 @@ function Hero() {
           </div> */}
         </div>
       </div>
+
       <div className="flex flex-col gap-10 w-full justify-start items-start">
         <div className="flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-medium ">
           If you’ve landed here expecting just another agency pitch, you’re in
@@ -89,13 +94,13 @@ function Hero() {
           differently!
         </div>
         <div className="lg:block hidden">
-        <BookAMeeting />
+          <BookAMeeting />
         </div>
         <div className="lg:hidden flex items-center justify-center w-full">
-  <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
-    BOOK A MEETING
-  </button>
-</div>
+          <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
+            BOOK A MEETING
+          </button>
+        </div>
       </div>
     </section>
   );

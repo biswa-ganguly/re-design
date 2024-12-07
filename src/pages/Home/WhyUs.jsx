@@ -32,7 +32,7 @@ function WhyUs() {
               position: "sticky",
               top: "190px",
             }}
-            className=" lg:block hidden flex flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4 lg:h-[43rem] md:h-[0rem] h-[0rem] "
+            className=" lg:block hidden flex-col lg:w-2/4 w-full lg:justify-center lg:items-start items-center lg:pl-14 p-4 lg:h-[43rem] md:h-[0rem] h-[0rem] "
           >
             <div className="flex justify-start items-center font-archivo text-[#FECE02] text-[80px] font-medium whitespace-nowrap">
               WHY US?

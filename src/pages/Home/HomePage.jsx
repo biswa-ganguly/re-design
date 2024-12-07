@@ -12,7 +12,7 @@ import Footer from "./Footer";
 
 function HomePage() {
   return (
-    <div className="">
+    <main className="">
       {/* Navbar */}
       <Navbar />
 
@@ -46,7 +46,7 @@ function HomePage() {
       <section id="contact">
         <Footer />
       </section>
-    </div>
+    </main>
   );
 }
 
