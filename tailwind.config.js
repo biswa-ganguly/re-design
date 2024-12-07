@@ -8,9 +8,9 @@ export default {
     extend: {
 
       fontFamily: {
-        archivo: ['Archivo','sans-serif'],
-        inter:['Inter','sans-serif'],
-        architects:['Architects Daughter','sans-serif']
+        archivo: ['Archivo', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        architects: ['Architects Daughter', 'sans-serif'],
       },
 
       keyframes: {
@@ -19,10 +19,15 @@ export default {
           '50%': { transform: 'translateX(75%) scaleX(1.5)' }, 
           '100%': { transform: 'translateX(125%) scaleX(1)' },
         },
-      },
-        animation: {
-          stretchMove: 'stretchMove 1s ease-out forwards', 
+        swing: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' },
         },
+      },
+      animation: {
+        stretchMove: 'stretchMove 1s ease-out forwards', 
+        swing: 'swing 5s ease-in-out infinite', 
+      },
     },
   },
   plugins: [],
