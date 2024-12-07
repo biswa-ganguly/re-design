@@ -48,7 +48,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="hidden lg:flex flex-col px-10 lg:px-14 gap-[2px]">
-          <h1 className="font-semibold text-xl mb-2 py-3">Services</h1>
+          <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
+            Services
+          </h1>
           <a href="/">Social Media</a>
           <a href="/">Website Development</a>
           <a href="/">Brand Identity</a>
@@ -56,7 +58,9 @@ const Footer = () => {
           <a href="/">SEO Optimization</a>
         </div>
         <div className="hidden lg:flex flex-col px-14 gap-[2px]">
-          <h1 className="font-semibold text-xl mb-2 py-3">Company</h1>
+          <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
+            Company
+          </h1>
           <a
             href="#about"
             onClick={(e) => handleScrollWithOffset(e, "about")}
@@ -87,7 +91,9 @@ const Footer = () => {
         {/* Mobile Section  */}
         <div className="flex lg:hidden">
           <div className="flex flex-col px-10 gap-[2px]">
-            <h1 className="font-semibold text-xl mb-2 py-3">Services</h1>
+            <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
+              Services
+            </h1>
             <a href="/">Social Media</a>
             <a href="/">Website Development</a>
             <a href="/">Brand Identity</a>
@@ -95,7 +101,9 @@ const Footer = () => {
             <a href="/">SEO Optimization</a>
           </div>
           <div className="flex flex-col px-10 gap-[2px]">
-            <h1 className="font-semibold text-xl mb-2 py-3">Company</h1>
+            <h1 className="font-semibold text-xl mb-2 py-3 text-[#6735EA]">
+              Company
+            </h1>
             <a
               href="#about"
               onClick={(e) => handleScrollWithOffset(e, "about")}
