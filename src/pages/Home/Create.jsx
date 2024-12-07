@@ -40,9 +40,9 @@ function Create() {
         }}
       ></div>
       <div className="text-center flex flex-col gap-7">
-        <div className="uppercase font-archivo flex flex-col md:flex-row gap-3 md:gap-7 justify-center items-center">
+        <div className="uppercase text-[#FECE02] font-archivo flex flex-col md:flex-row gap-3 md:gap-7 justify-center items-center">
           <div className="flex gap-5 md:gap-8 lg:gap-10">
-            <div className="flex text-4xl lg:text-7xl font-medium">
+            <div className="flex text-4xl  lg:text-7xl font-medium">
               {text1.split("").map((char, index) => (
                 <span
                   key={`part1-${index}`}
@@ -90,16 +90,16 @@ function Create() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="flex flex-col p-10 gap-5 text-gray-400 hover:text-white transition-colors duration-200"
+            className="flex flex-col p-10 gap-5 text-gray-300 hover:text-white transition-colors duration-200"
           >
             <div className="flex lg:flex-col gap-2 items-center lg:items-baseline">
-              <p className="text-2xl font-semibold">0{index + 1}</p>
-              <h1 className="uppercase font-semibold text-xl">
+              <p className="text-2xl text-white font-semibold">0{index + 1}</p>
+              <h1 className="uppercase text-white font-semibold text-xl">
                 {section.title}
               </h1>
             </div>
 
-            <p className="text-lg">{section.description}</p>
+            <p className="text-lg lg:hover:scale-110 transition duration-200">{section.description}</p>
           </div>
         ))}
       </div>
