@@ -29,16 +29,16 @@ function Create() {
 
   const text1 = "Creative";
   const text2 = "Fresh";
-  const text3 = "Solutions";
+  // const text3 = "Solutions";
 
   return (
     <div className="relative px-5 bg-black min-h-screen text-white pt-28 lg:pt-36">
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center opacity-45 pointer-events-none"
         style={{
           backgroundImage: `url("/texture.webp")`,
         }}
-      ></div>
+      ></div> */}
       <div className="text-center flex flex-col gap-7">
         <div className="uppercase text-[#FECE02] font-archivo flex flex-col md:flex-row gap-3 md:gap-7 justify-center items-center">
           <div className="flex gap-5 md:gap-8 lg:gap-10">
@@ -68,16 +68,7 @@ function Create() {
               </span>
             ))}
           </div>
-          <div className="flex text-4xl lg:text-7xl font-medium">
-            {text3.split("").map((char, index) => (
-              <span
-                key={`part2-${index}`}
-                className="inline-block transition-transform transform hover:-translate-y-5 will-change-transform"
-              >
-                {char}
-              </span>
-            ))}
-          </div>
+          
         </div>
 
         <p className="text-lg text-gray-100 px-5 lg:px-24">
@@ -90,7 +81,7 @@ function Create() {
         {sections.map((section, index) => (
           <div
             key={index}
-            className="flex flex-col p-10 gap-5 text-gray-300 hover:text-white transition-colors duration-200"
+            className="flex flex-col p-10 gap-5 text-gray-500 hover:text-white transition-colors duration-100"
           >
             <div className="flex lg:flex-col gap-2 items-center lg:items-baseline">
               <p className="text-2xl text-white font-semibold">0{index + 1}</p>
@@ -99,7 +90,7 @@ function Create() {
               </h1>
             </div>
 
-            <p className="text-lg lg:hover:scale-110 transition duration-200">{section.description}</p>
+            <p className="text-lg transition duration-200">{section.description}</p>
           </div>
         ))}
       </div>

@@ -10,8 +10,8 @@ function AboutUs() {
         About Us
       </h2>
       <div className="w-screen text-center lg:flex lg:justify-center items-center gap-10 lg:gap-[20%] mx-[0%] px-3">
-        <p className="text-xl lg:text-2xl max-w-4xl font-light italic ">
-          <span className="font-semibold not-italic">
+        <p className="text-xl font-medium lg:text-2xl max-w-4xl  ">
+          <span className=" font-light italic">
             Collaborate. Innovate. Succeed.{" "}
           </span>
           Picture us as your creative late-night squad–lights on, coffee

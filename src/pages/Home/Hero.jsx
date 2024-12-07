@@ -81,7 +81,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex flex-col gap-10 w-full justify-start items-start">
-        <div className="flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-semibold ">
+        <div className="flex lg:w-2/4 w-full lg:p-0 p-5 font-inter lg:text-[26px] text-[20px] lg:ml-20 font-medium ">
           If you’ve landed here expecting just another agency pitch, you’re in
           for a surprise. Welcome to The Agenc-E, where rules are bent, boxes
           are broken, and ideas come alive. Born in Kolkata, we’re the perfect
