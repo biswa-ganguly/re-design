@@ -6,7 +6,7 @@ import BookAMeeting from "../../components/BookAMeeting";
 
 function Hero() {
   return (
-    <section>
+    <section className="">
       <img
         src="/Highlight.png"
         alt="Heroimage"
@@ -88,7 +88,14 @@ function Hero() {
           match for dreamers, misfits, and visionaries who dare to think
           differently!
         </div>
+        <div className="lg:block hidden">
         <BookAMeeting />
+        </div>
+        <div className="lg:hidden flex items-center justify-center w-full">
+  <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
+    BOOK A MEETING
+  </button>
+</div>
       </div>
     </section>
   );

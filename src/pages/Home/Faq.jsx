@@ -25,7 +25,7 @@ function Faq() {
               <img
                 src="Arrow.svg"
                 alt="arrow"
-                className="w-20 lg:w-36 fill-white -rotate-[160deg] mr-4"
+                className="w-20 lg:block hidden lg:w-36 fill-white -rotate-[160deg] mr-4"
               />
               <img
                 src="/questionmark.svg"
@@ -34,13 +34,14 @@ function Faq() {
               />
             </div>
 
-            <div className="text-white font-architects lg:text-[26px] text-[20px] mt-4 -ml-32">
+            <div className="text-white lg:block hidden font-architects lg:text-[26px] text-[20px] mt-4 -ml-32">
               Nothing Special
             </div>
           </div>
         </div>
         <Accordion />
       </div>
+      <div className="lg:block hidden">
       <div className="lg:h-[60vh] mt-10 mb-1">
         <div className="flex lg:flex-row flex-col justify-between">
           <div className="flex flex-col">
@@ -57,6 +58,35 @@ function Faq() {
             className="p-10 inline-block"
           />
         </div>
+      </div>
+      </div>
+
+
+      {/* mobile section */}
+
+
+
+      <div className="lg:hidden block">
+      <div className="flex flex-col items-center justify-center  bg-white px-6 py-12">
+      <img
+            src="Frame48.svg"
+            alt="frame"
+            className="p-10 inline-block"
+          />
+      <div className="text-center mb-8">
+        <h2 className="text-xl font-semibold text-black">
+          At The Agenc-E, we don’t just work—
+        </h2>
+        <p className="text-lg text-black">
+          we create, innovate, and deliver. <br />
+          Let’s make something{" "}
+          <span className="italic text-purple-600">amazing</span> together.
+        </p>
+      </div>
+      <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full  transition duration-300">
+          BOOK A MEETING
+        </button>
+    </div>
       </div>
     </>
   );
