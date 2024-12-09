@@ -1,0 +1,28 @@
+name: "Deployment (Staging)"
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+jobs:
+  deploy-to-server:
+    name: Deploy to Server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setting up Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Installing Dependecies
+        run: npm ci
+      - name: Build for Staging
+        run: |
+          npm run build
+      - name: Deploy to Server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
