@@ -34,9 +34,9 @@ function HomePage() {
       <section id="why-us">
         <WhyUs />
       </section>
-      <section id="">
+      {/* <section id="">
         <Founders />
-      </section>
+      </section> */}
       <section id="work">
         <AmazingWorks />
       </section>
