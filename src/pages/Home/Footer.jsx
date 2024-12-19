@@ -36,7 +36,7 @@ const Footer = () => {
             +91 9051 584 158
           </a>
           <a
-            href="mailto:contact.theagenc.e@gmail.com"
+            href="mailto:info@theagence.in"
             className="underline font-medium"
           >
             info@theagence.in
