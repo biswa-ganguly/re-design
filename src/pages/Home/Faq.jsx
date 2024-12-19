@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Accordion from "../../components/Accordion";
 import BookAMeetingV2 from "../../components/BookAMeetingV2";
+import { Link } from "react-router-dom";
 
 function Faq() {
   const [rotation, setRotation] = useState(0);
@@ -76,9 +77,9 @@ function Faq() {
                 At <strong>The Agenc-E</strong>, we don’t just work—we create,
                 innovate, and deliver. Let’s make something amazing together.
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
+              <Link to="/book-meeting">
               <BookAMeetingV2 />
-              </a>
+              </Link>
             </div>
 
             <img src="Frame48.svg" alt="frame" className="p-10 inline-block animate-swing" />
@@ -129,7 +130,7 @@ function Faq() {
             </p>
           </div>
           <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">BOOK A MEETING</a>
+            <Link to="/book-meeting">BOOK A MEETING</Link>
           </button>
         </div>
       </div>

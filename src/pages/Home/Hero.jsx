@@ -3,6 +3,7 @@ import ToggleButton from "../../components/ToggleButton";
 import { motion } from "framer-motion";
 import ImageSlider from "../../components/ImageSlider";
 import BookAMeeting from "../../components/BookAMeeting";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -42,7 +43,7 @@ function Hero() {
           <img
             src="/Union.svg"
             alt="star"
-            className="lg:h-24 md:h-16 h-12 animate-bounce"
+            className="lg:h-24 md:h-16 h-12"
           />
 
           {/* <button className="lg:h-[100px] lg:w-[300px] md:h-[60px] md:w-[150px] w-[100px] h-[40px] bg-[#6735EA] rounded-full"></button> */}
@@ -94,15 +95,15 @@ function Hero() {
           differently!
         </div>
         <div className="lg:block hidden">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
+          <Link to="/book-meeting">
           <BookAMeeting />
-          </a>
+          </Link>
         </div>
         <div className="lg:hidden flex items-center justify-center w-full">
           <button className="bg-[#6735EA] text-[#FECE02] font py-4 px-8 rounded-full transition duration-300">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekMrL2FIh6Mp5y3EyXcoM0QJmqdJ0J9d0QOI3DSuIfPIsRWw/viewform?usp=sf_link">
+            <Link to="/book-meeting">
               Book a Meeting
-            </a>
+            </Link>
           </button>
         </div>
       </div>

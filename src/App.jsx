@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import AboutUspage from "./pages/AboutUs/AboutUspage";
 import Loader from "./components/Loader";
 
+import AdminPanel from "./pages/Meeting-Form/AminPanel";
+import BookingForm from "./pages/Meeting-Form/MeetingForm";
+
 function App() {
   const [screenLoading, setScreenLoading] = useState(false);
 
@@ -32,6 +35,8 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/AboutUspage" element={<AboutUspage />} />
+              <Route path="/book-meeting" element={<BookingForm />}/>
+              <Route path="/admin" element={<AdminPanel />}/>
             </Routes>
           </Wrapper>
         </BrowserRouter>
